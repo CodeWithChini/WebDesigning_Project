@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header{
+    background-image: url(https://images.pexels.com/photos/3476860/pexels-photo-3476860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: auto;
+    background-size: cover;
+    width: 100%;
+    backdrop-filter: 8px;
+    opacity: 2;
+    color: white;
+    padding: 425px;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    display: flex;
+}
+.navigation{
+    background-color: white;
+    height: 80px;
+}
+nav {
+    position: absolute;
+    top: 12px;
+    left: 400px;
+    display: flex;
+    padding: 10px 60px;
+}
+.mainTaxt{
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.navbar {
+
+    list-style: none;
+    display: flex;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+.navbar li {
+    margin: 0 15px;
+    gap: 80px;
+}
+a {
+    background-image: linear-gradient(
+      to right,
+      #949899,
+      #949899 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:before{
+    content: '';
+    background: #949899;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+.navbar li a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.navbar li a:hover{
+    color:dimgray;
+    text-decoration: underline;
+}
+.navbar li a:hover::before{
+    width: 100%;
+  }
+.wavy{
+    position: relative;
+    bottom: 50px;
+}
+.wavy span{
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    font-size: 4.3rem;
+    animation: animate 1s ease-in-out ;
+   animation-iteration-count: 1;
+   animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
+.bold {
+    position: relative;
+    bottom: 70px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: Fira Mono, Courier, Consolas;
+}
+.section1-AI{
+    background-image: url(https://images.pexels.com/photos/19867576/pexels-photo-19867576/free-photo-of-red-fort-in-delhi.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    opacity: 4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    padding: 310px;
+}
+/*
+.AI{
+    color: white;
+   font-weight: 800;
+    text-align: center;
+    font-size: 70px;
+    position: absolute;
+    top: 1050px;
+    left: 750px;
+}*/
+/* From Uiverse.io by doniaskima */
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+
+.btn-53:disabled {
+  cursor: default;
+}
+
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+
+.btn-53 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+  display: none;
+}
+
+.btn-53 {
+
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 0.6rem 2rem;
+  position: relative;
+  left: 32%;
+  text-transform: uppercase;
+}
+
+.btn-53 .original {
+  background: #ff0000;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+
+.btn-53:hover span:nth-child(7) {
+    transition-delay: 0.6s;
+  }
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    position: relative;
+    width: 22%;
+    margin: 100px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(transparent, black);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.explore-button {
+    display: inline-block;
+    font-size: 100;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+.explore-button:hover {
+    background: darkred;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+
+.footer {
+    background-image: url(https://www.theleela.com/prod/content/assets/styles/tl_1920_735/public/aio-banner/dekstop/Explore-India-Gate-in-Delhi_1.jpg.webp?VersionId=nJIPIo1WQMkBaD0dWDGZTo2QHnsLWzyP&itok=fh-AAV5n);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 250px 0;
+    position: relative; /* Add this to position the overlay */
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure the overlay is behind the text */
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    position: relative; /* Add this to position the text above the overlay */
+    z-index: 2; /* Ensure the text is above the overlay */
+}
+
+.footer-col h4,
+.footer-col ul li a {
+    color: #ffffff; /* Ensure text is white for readability */
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #24262b;
+  display: block;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.social-links {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons */
+    gap: 10px; /* Space between icons */
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* General styles for mobile screens */
+@media (max-width: 767px) {
+    header {
+        padding: 200px; /* Reduce padding for smaller screens */
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center text */
+    }
+
+    .navbar {
+       display: flex;
+        font-size: 20px;
+        gap: 2px;
+    }
+    nav{
+        position: absolute;
+        left: 1px;
+        right: 5px;
+
+    }
+
+    .navbar li {
+
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
+
+    .card {
+        width: 90%; /* Make cards take up more width */
+        margin: 20px 0; /* Adjust margin */
+    }
+
+    .footer {
+        padding: 100px 0; /* Reduce footer padding */
+    }
+
+    .footer-col {
+        width: 100%; /* Make footer columns full width */
+        margin-bottom: 30px; /* Add margin between footer columns */
+    }
+
+    .footer-col h4 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .footer-col ul li a {
+        font-size: 14px; /* Adjust font size for links */
+    }
+
+    .explore-button {
+        font-size: 16px; /* Adjust button font size */
+        padding: 8px 12px; /* Adjust button padding */
+    }
+}
