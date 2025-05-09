@@ -1,5 +1,5 @@
 Description :
-A mobile app that showcases a collection of authentic Indian recipes, allowing users to search by ingredients, cuisine type, or dietary restrictions.
+A Website that showcases a collection of authentic Indian recipes, allowing users to search by ingredients, cuisine type, Histroy,Famous Landmark.
 
 Features :
 Search Functionality: Find recipes based on ingredients or cuisine.
